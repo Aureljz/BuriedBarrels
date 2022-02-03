@@ -17,6 +17,9 @@
     "main": [
       "net.aurelj.buriedbarrels.BuriedBarrelsMain"
     ],
+    "client": [
+      "net.aurelj.buriedbarrels.BuriedBarrelsMainClient"
+    ],
     "modmenu": [
       "net.aurelj.buriedbarrels.integration.BBModMenu"
     ]

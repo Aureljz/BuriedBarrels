@@ -1,4 +1,5 @@
 {
+  "text.buried_barrel.map.tooltip": "Leads to a buried barrel containing\nextra loot.",
   "filled_map.buriedbarrels:abandoned_mineshaft_buried_barrel": "Exploration Map: Buried Mineshaft Barrel",
   "filled_map.buriedbarrels:desert_pyramid_buried_barrel": "Exploration Map: Buried Desert Pyramid Barrel",
   "filled_map.buriedbarrels:end_city_buried_barrel": "Exploration Map: Buried End Barrel",

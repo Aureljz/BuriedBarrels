@@ -128,28 +128,23 @@ express Statement of Purpose.
 
 package net.aurelj.buriedbarrels.init;
 
-import java.util.List;
-
+import com.google.common.collect.Lists;
 import net.aurelj.buriedbarrels.BBStructures;
+import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
+import net.fabricmc.fabric.api.loot.v1.FabricLootSupplierBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.minecraft.item.Items;
 import net.minecraft.item.map.MapIcon;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
-import net.minecraft.loot.function.ExplorationMapLootFunction;
-import net.minecraft.loot.function.SetLoreLootFunction;
-import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
-
-import com.google.common.collect.Lists;
-
-import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
-import net.fabricmc.fabric.api.loot.v1.FabricLootSupplierBuilder;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.text.Text;
+import net.minecraft.loot.function.ExplorationMapLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.util.Identifier;
 import org.apache.commons.lang3.ArrayUtils;
 
-public class LootInjector {
+import java.util.List;
 
+public class LootInjector {
     private static final List<LootTableInsert> INSERTS = Lists.newArrayList();
 
     public static void init() {
@@ -159,18 +154,16 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(0.25f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.DESERT_PYRAMID_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.DESERT_PYRAMID_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(DESERT_PYRAMID_BURIED_BARREL_MAP,
-                        new Identifier("minecraft", "chests/desert_pyramid")));
+                    new Identifier("minecraft", "chests/desert_pyramid")));
 
             FabricLootPoolBuilder JUNGLE_TEMPLE_BURIED_BARREL_MAP = FabricLootPoolBuilder.builder()
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(1f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.JUNGLE_TEMPLE_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.JUNGLE_TEMPLE_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(JUNGLE_TEMPLE_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/jungle_temple")));
@@ -179,8 +172,7 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(0.25f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.ABANDONED_MINESHAFT_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.ABANDONED_MINESHAFT_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(ABANDONED_MINESHAFT_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/abandoned_mineshaft")));
@@ -189,8 +181,7 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(0.25f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.END_CITY_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.END_CITY_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(END_CITY_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/end_city_treasure")));
@@ -199,8 +190,7 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(1f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.IGLOO_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.IGLOO_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(IGLOO_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/igloo_chest")));
@@ -209,8 +199,7 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(0.75f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.PILLAGER_OUTPOST_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.PILLAGER_OUTPOST_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(PILLAGER_OUTPOST_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/pillager_outpost"),
@@ -225,8 +214,7 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(0.33f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.STRONGHOLD_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.STRONGHOLD_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(STRONGHOLD_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/stronghold_corridor"),
@@ -236,8 +224,7 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(1f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.VILLAGE_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.VILLAGE_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(VILLAGE_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/village/village_weaponsmith")));
@@ -246,16 +233,14 @@ public class LootInjector {
                     .rolls(ConstantLootNumberProvider.create(1))
                     .with(ItemEntry.builder(Items.MAP))
                     .withCondition(RandomChanceLootCondition.builder(0.2f).build())
-                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.WOODLAND_MANSION_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build())
-                    .withFunction(SetLoreLootFunction.builder().lore(Text.of("Leads to a buried barrel containing extra loot.")).build());
+                    .withFunction(ExplorationMapLootFunction.builder().withDestination(BBStructures.WOODLAND_MANSION_BURIED_BARREL).withDecoration(MapIcon.Type.RED_X).withSkipExistingChunks(false).build());
 
             insert(new LootTableInsert(WOODLAND_MANSION_BURIED_BARREL_MAP,
                     new Identifier("minecraft", "chests/woodland_mansion")));
 
             LootTableLoadingCallback.EVENT.register(((resourceManager, lootManager, identifier, supplier, lootTableSetter) -> {
-                INSERTS.forEach(i->{
-                    if(ArrayUtils.contains(i.tables, identifier))
-                    {
+                INSERTS.forEach(i -> {
+                    if (ArrayUtils.contains(i.tables, identifier)) {
                         i.insert(supplier);
                     }
                 });
@@ -264,24 +249,20 @@ public class LootInjector {
     }
 
 
-    public static void insert(LootTableInsert insert)
-    {
+    public static void insert(LootTableInsert insert) {
         INSERTS.add(insert);
     }
 
-    public static class LootTableInsert
-    {
+    public static class LootTableInsert {
         public final Identifier[] tables;
         public final FabricLootPoolBuilder lootPool;
 
-        public LootTableInsert(FabricLootPoolBuilder lootPool, Identifier... tables)
-        {
+        public LootTableInsert(FabricLootPoolBuilder lootPool, Identifier... tables) {
             this.tables = tables;
             this.lootPool = lootPool;
         }
 
-        public void insert(FabricLootSupplierBuilder supplier)
-        {
+        public void insert(FabricLootSupplierBuilder supplier) {
             supplier.pool(lootPool);
         }
     }
