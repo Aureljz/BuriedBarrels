@@ -96,6 +96,6 @@ public class BBConfig implements ConfigData {
             Basic configuration options for this buried barrel""")
     public boolean commonHiddenBuriedBarrelGenerates = true;
     @Comment("Base distance between Common Hidden Buried Barrels (in chunks)")
-    public int commonHiddenBuriedBarrelSpacing = 15;
+    public int commonHiddenBuriedBarrelSpacing = 10;
 
 }
