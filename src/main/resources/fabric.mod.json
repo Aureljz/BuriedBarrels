@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "buriedbarrels",
+  "version": "${version}",
+
+  "name": "Buried Barrels",
+  "description": "A simple vanilla+ mod that generates hidden treasures for all vanilla structures, in the form of buried barrels.",
+  "authors": [
+    "Aurelj & DiamondTown"
+  ],
+
+  "license": "MIT Licence",
+  "icon": "assets/buriedbarrels/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.aurelj.buriedbarrels.BuriedBarrelsMain"
+    ]
+  },
+  "mixins": [],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17",
+    "cloth-config2": ">=6.0.42"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
