@@ -89,4 +89,13 @@ public class BBConfig implements ConfigData {
     @Comment("Base distance between Woodland Mansion Buried Barrels (in chunks)")
     public int woodlandMansionBuriedBarrelSpacing = 40;
 
+    @Comment("""
+                        
+                      
+            [Common Hidden Buried Barrel Spawning Settings]
+            Basic configuration options for this buried barrel""")
+    public boolean commonHiddenBuriedBarrelGenerates = true;
+    @Comment("Base distance between Common Hidden Buried Barrels (in chunks)")
+    public int commonHiddenBuriedBarrelSpacing = 15;
+
 }

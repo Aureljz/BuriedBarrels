@@ -42,11 +42,64 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
         }
       ]
     },
     {
       "rolls": 1,
+      "bonus_rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -55,34 +108,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 8,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:ender_pearl",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:wither_rose",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
+                "min": 4,
+                "max": 6
               }
             }
           ]
@@ -93,7 +120,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 20
+              "levels": 5
             }
           ]
         }
@@ -101,14 +128,15 @@
     },
     {
       "rolls": {
-        "min": 1,
-        "max": 2
+        "min": 2,
+        "max": 3
       },
+      "bonus_rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "weight": 20,
-          "name": "minecraft:iron_ingot",
+          "name": "minecraft:iron_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -122,7 +150,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:gold_ingot",
+          "name": "minecraft:gold_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -132,19 +160,23 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 1,
-        "max": 2
-      },
-      "entries": [
+        },
         {
           "type": "minecraft:item",
-          "weight": 10,
           "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -157,14 +189,147 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:diamond",
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tnt",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
               }
             }
           ]
@@ -172,21 +337,25 @@
       ]
     },
     {
-      "rolls": {
-        "min": 0,
-        "max": 2
-      },
+      "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 25
+        },
+        {
           "type": "minecraft:item",
+          "weight": 5,
           "name": "minecraft:iron_pickaxe"
         },
         {
           "type": "minecraft:item",
+          "weight": 4,
           "name": "minecraft:chainmail_helmet"
         },
         {
           "type": "minecraft:item",
+          "weight": 2,
           "name": "minecraft:iron_leggings"
         },
         {
@@ -196,6 +365,30 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings"
         }
       ]
     }

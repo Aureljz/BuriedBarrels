@@ -123,5 +123,13 @@ public class BuriedBarrelsMain implements ModInitializer {
                         Registry.CONFIGURED_STRUCTURE_FEATURE_KEY,
                         BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE.getId(BBConfiguredStructures.CONFIGURED_STRONGHOLD_BURIED_BARREL))
         );
+
+        BiomeModifications.addStructure(
+                BiomeSelectors.foundInOverworld()
+                        .and(BiomePredicateUtil.booleanToPredicate(BuriedBarrelsMain.CONFIG.commonHiddenBuriedBarrelGenerates)),
+                RegistryKey.of(
+                        Registry.CONFIGURED_STRUCTURE_FEATURE_KEY,
+                        BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE.getId(BBConfiguredStructures.CONFIGURED_COMMON_HIDDEN_BURIED_BARREL))
+        );
     }
 }

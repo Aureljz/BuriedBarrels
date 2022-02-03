@@ -27,6 +27,10 @@ public class BBConfiguredStructures {
             .configure(new StructurePoolFeatureConfig(() -> PlainsVillageData.STRUCTURE_POOLS, 0));
     public static ConfiguredStructureFeature<?, ?> CONFIGURED_STRONGHOLD_BURIED_BARREL = BBStructures.STRONGHOLD_BURIED_BARREL
             .configure(new StructurePoolFeatureConfig(() -> PlainsVillageData.STRUCTURE_POOLS, 0));
+    public static ConfiguredStructureFeature<?, ?> CONFIGURED_COMMON_HIDDEN_BURIED_BARREL = BBStructures.COMMON_HIDDEN_BURIED_BARREL
+            .configure(new StructurePoolFeatureConfig(() -> PlainsVillageData.STRUCTURE_POOLS, 0));
+
+
 
     public static void registerConfiguredStructures() {
         Registry<ConfiguredStructureFeature<?, ?>> registry = BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE;
@@ -39,6 +43,7 @@ public class BBConfiguredStructures {
         Registry.register(registry, new Identifier(net.aurelj.buriedbarrels.BuriedBarrelsMain.MODID, "configured_stronghold_buried_barrel"), CONFIGURED_STRONGHOLD_BURIED_BARREL);
         Registry.register(registry, new Identifier(net.aurelj.buriedbarrels.BuriedBarrelsMain.MODID, "configured_village_buried_barrel"), CONFIGURED_VILLAGE_BURIED_BARREL);
         Registry.register(registry, new Identifier(net.aurelj.buriedbarrels.BuriedBarrelsMain.MODID, "configured_woodland_mansion_buried_barrel"), CONFIGURED_WOODLAND_MANSION_BURIED_BARREL);
+        Registry.register(registry, new Identifier(net.aurelj.buriedbarrels.BuriedBarrelsMain.MODID, "configured_common_hidden_buried_barrel"), CONFIGURED_COMMON_HIDDEN_BURIED_BARREL);
 
     }
 }

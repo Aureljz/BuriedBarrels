@@ -20,6 +20,7 @@ public class BBStructures {
     public static StructureFeature<StructurePoolFeatureConfig> WOODLAND_MANSION_BURIED_BARREL = new WoodlandMansionBuriedBarrelStructure(StructurePoolFeatureConfig.CODEC);
     public static StructureFeature<StructurePoolFeatureConfig> VILLAGE_BURIED_BARREL = new VillageBuriedBarrelStructure(StructurePoolFeatureConfig.CODEC);
     public static StructureFeature<StructurePoolFeatureConfig> STRONGHOLD_BURIED_BARREL = new StrongholdBuriedBarrelStructure(StructurePoolFeatureConfig.CODEC);
+    public static StructureFeature<StructurePoolFeatureConfig> COMMON_HIDDEN_BURIED_BARREL = new CommonHiddenBuriedBarrelStructure(StructurePoolFeatureConfig.CODEC);
 
     public static void setupAndRegisterStructureFeatures() {
 
@@ -94,6 +95,14 @@ public class BBStructures {
                         5 + BuriedBarrelsMain.CONFIG.strongholdBuriedBarrelSpacing,
                         BuriedBarrelsMain.CONFIG.strongholdBuriedBarrelSpacing,
                         453557128))
+                .register();
+
+        FabricStructureBuilder.create(new Identifier(net.aurelj.buriedbarrels.BuriedBarrelsMain.MODID, "common_hidden_buried_barrel"), COMMON_HIDDEN_BURIED_BARREL)
+                .step(GenerationStep.Feature.SURFACE_STRUCTURES)
+                .defaultConfig(new StructureConfig(
+                        5 + BuriedBarrelsMain.CONFIG.commonHiddenBuriedBarrelSpacing,
+                        BuriedBarrelsMain.CONFIG.commonHiddenBuriedBarrelSpacing,
+                        371652991))
                 .register();
 
     }
