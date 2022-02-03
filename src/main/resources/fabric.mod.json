@@ -16,6 +16,12 @@
   "entrypoints": {
     "main": [
       "net.aurelj.buriedbarrels.BuriedBarrelsMain"
+    ],
+    "client": [
+      "net.aurelj.buriedbarrels.BuriedBarrelsMainClient"
+    ],
+    "modmenu": [
+      "net.aurelj.buriedbarrels.integration.BBModMenu"
     ]
   },
   "mixins": [],
@@ -28,6 +34,6 @@
     "cloth-config2": ">=6.0.42"
   },
   "suggests": {
-    "another-mod": "*"
+    "modmenu": ">=3.0.1"
   }
 }

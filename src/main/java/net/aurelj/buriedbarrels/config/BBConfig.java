@@ -9,8 +9,6 @@ import net.aurelj.buriedbarrels.BuriedBarrelsMain;
 public class BBConfig implements ConfigData {
 
     @Comment("""
-                        
-                      
             [Desert Pyramid Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean desertPyramidBuriedBarrelGenerates = true;
@@ -18,8 +16,6 @@ public class BBConfig implements ConfigData {
     public int desertPyramidBuriedBarrelSpacing = 20;
 
     @Comment("""
-                        
-                      
             [Jungle Temple Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean jungleTempleBuriedBarrelGenerates = true;
@@ -27,8 +23,6 @@ public class BBConfig implements ConfigData {
     public int jungleTempleBuriedBarrelSpacing = 20;
 
     @Comment("""
-                        
-                      
             [Abandoned Mineshaft Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean abandonedMineshaftBuriedBarrelGenerates = true;
@@ -36,8 +30,6 @@ public class BBConfig implements ConfigData {
     public int abandonedMineshaftBuriedBarrelSpacing = 30;
 
     @Comment("""
-                        
-                      
             [End City Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean endCityBuriedBarrelGenerates = true;
@@ -45,8 +37,6 @@ public class BBConfig implements ConfigData {
     public int endCityBuriedBarrelSpacing = 20;
 
     @Comment("""
-                        
-                      
             [Igloo Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean iglooBuriedBarrelGenerates = true;
@@ -54,8 +44,6 @@ public class BBConfig implements ConfigData {
     public int iglooBuriedBarrelSpacing = 20;
 
     @Comment("""
-                        
-                      
             [Pillager Outpost Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean pillagerOutpostBuriedBarrelGenerates = true;
@@ -63,8 +51,6 @@ public class BBConfig implements ConfigData {
     public int pillagerOutpostBuriedBarrelSpacing = 30;
 
     @Comment("""
-                        
-                      
             [Stronghold Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean strongholdBuriedBarrelGenerates = true;
@@ -72,8 +58,6 @@ public class BBConfig implements ConfigData {
     public int strongholdBuriedBarrelSpacing = 40;
 
     @Comment("""
-                        
-                      
             [Village Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean villageBuriedBarrelGenerates = true;
@@ -81,8 +65,6 @@ public class BBConfig implements ConfigData {
     public int villageBuriedBarrelSpacing = 20;
 
     @Comment("""
-                        
-                      
             [Woodland Mansion Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean woodlandMansionBuriedBarrelGenerates = true;
@@ -90,8 +72,6 @@ public class BBConfig implements ConfigData {
     public int woodlandMansionBuriedBarrelSpacing = 40;
 
     @Comment("""
-                        
-                      
             [Common Hidden Buried Barrel Spawning Settings]
             Basic configuration options for this buried barrel""")
     public boolean commonHiddenBuriedBarrelGenerates = true;
